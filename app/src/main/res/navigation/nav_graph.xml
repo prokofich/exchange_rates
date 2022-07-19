@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.urrency_rate_app.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_rootFragment"
+            app:destination="@id/rootFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/rootFragment"
+        android:name="com.example.urrency_rate_app.RootFragment"
+        android:label="fragment_root"
+        tools:layout="@layout/fragment_root" />
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.urrency_rate_app.start.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" />
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.urrency_rate_app.second.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
+</navigation>
